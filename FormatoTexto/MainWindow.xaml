@@ -5,9 +5,64 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FormatoTexto"
         mc:Ignorable="d"
-        Title="Texto con formato" Height="300" Width="600"
+        Title="Texto con formato"
+        Height="300"
+        Width="600"
         Icon="Assets/icon.ico">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="57,65,0,0"
+                   TextWrapping="Wrap"
+                   Text="Texto"
+                   VerticalAlignment="Top" />
+        <TextBox x:Name="textoTextBox"
+                 HorizontalAlignment="Left"
+                 Height="69"
+                 Margin="57,86,0,0"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="133" />
+        <CheckBox x:Name="negritaCheckBox"
+                  Content="Negrita"
+                  HorizontalAlignment="Left"
+                  Margin="224,86,0,0"
+                  VerticalAlignment="Top"
+                  FontWeight="Bold" />
+        <CheckBox x:Name="cursivaCheckBox"
+                  Content="Cursiva"
+                  HorizontalAlignment="Left"
+                  Margin="311,86,0,0"
+                  VerticalAlignment="Top"
+                  FontStyle="Italic" />
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="398,85,0,0"
+                   TextWrapping="Wrap"
+                   Text="Color del texto"
+                   VerticalAlignment="Top" />
+        <RadioButton x:Name="colorAzulRadioButton"
+                     Content="Azul"
+                     HorizontalAlignment="Left"
+                     Margin="494,74,0,0"
+                     VerticalAlignment="Top" />
+        <RadioButton x:Name="colorRojoRadioButton"
+                     Content="Rojo"
+                     HorizontalAlignment="Left"
+                     Margin="494,94,0,0"
+                     VerticalAlignment="Top" />
+        <RadioButton x:Name="colorVerdeRadioButton"
+                     Content="Verde"
+                     HorizontalAlignment="Left"
+                     Margin="494,114,0,0"
+                     VerticalAlignment="Top" />
+        <TextBlock x:Name="textoFormateadoTextBlock"
+                   HorizontalAlignment="Left"
+                   Margin="57,187,0,0"
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top"
+                   Width="486"
+                   Height="45" 
+                   Background="Beige"/>
+
+
     </Grid>
 </Window>
