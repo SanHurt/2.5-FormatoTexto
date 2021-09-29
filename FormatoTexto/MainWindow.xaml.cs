@@ -23,6 +23,32 @@ namespace FormatoTexto
         public MainWindow()
         {
             InitializeComponent();
+            colorAzulRadioButton.IsChecked = true;
+        }
+
+        private void textoTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            textoFormateadoTextBlock.Text = textoTextBox.Text;
+        }
+
+        private void negritaCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            textoFormateadoTextBlock.FontWeight = FontWeights.Bold;
+        }
+
+        private void negritaCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            textoFormateadoTextBlock.FontWeight = FontWeights.Normal;
+        }
+
+        private void cursivaCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            textoFormateadoTextBlock.FontStyle = FontStyles.Italic;
+        }
+
+        private void cursivaCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            textoFormateadoTextBlock.FontStyle = FontStyles.Normal;
         }
     }
 }

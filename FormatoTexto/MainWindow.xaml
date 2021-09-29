@@ -21,19 +21,25 @@
                  Margin="57,86,0,0"
                  TextWrapping="Wrap"
                  VerticalAlignment="Top"
-                 Width="133" />
+                 Width="133"
+                 TextChanged="textoTextBox_TextChanged"
+                 TextAlignment="Center" />
         <CheckBox x:Name="negritaCheckBox"
                   Content="Negrita"
                   HorizontalAlignment="Left"
                   Margin="224,86,0,0"
                   VerticalAlignment="Top"
-                  FontWeight="Bold" />
+                  FontWeight="Bold" 
+                  Checked="negritaCheckBox_Checked"
+                  Unchecked="negritaCheckBox_Unchecked"/>
         <CheckBox x:Name="cursivaCheckBox"
                   Content="Cursiva"
                   HorizontalAlignment="Left"
                   Margin="311,86,0,0"
                   VerticalAlignment="Top"
-                  FontStyle="Italic" />
+                  FontStyle="Italic" 
+                  Checked="cursivaCheckBox_Checked"
+                  Unchecked="cursivaCheckBox_Unchecked"/>
         <TextBlock HorizontalAlignment="Left"
                    Margin="398,85,0,0"
                    TextWrapping="Wrap"
@@ -56,12 +62,13 @@
                      VerticalAlignment="Top" />
         <TextBlock x:Name="textoFormateadoTextBlock"
                    HorizontalAlignment="Left"
-                   Margin="57,187,0,0"
+                   Margin="57,198,0,0"
                    TextWrapping="Wrap"
                    VerticalAlignment="Top"
                    Width="486"
-                   Height="45" 
-                   Background="Beige"/>
+                   Height="34"
+                   Background="Beige"
+                   TextAlignment="Center" />
 
 
     </Grid>
