@@ -50,5 +50,20 @@ namespace FormatoTexto
         {
             textoFormateadoTextBlock.FontStyle = FontStyles.Normal;
         }
+
+        private void colorAzulRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            textoFormateadoTextBlock.Foreground = Brushes.Blue;
+        }
+
+        private void colorRojoRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            textoFormateadoTextBlock.Foreground = Brushes.Red;
+        }
+
+        private void colorVerdeRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            textoFormateadoTextBlock.Foreground = Brushes.Green;
+        }
     }
 }
