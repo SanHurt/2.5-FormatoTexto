@@ -22,8 +22,7 @@
                  TextWrapping="Wrap"
                  VerticalAlignment="Top"
                  Width="133"
-                 TextChanged="textoTextBox_TextChanged"
-                 TextAlignment="Center" />
+                 TextChanged="textoTextBox_TextChanged"/>
         <CheckBox x:Name="negritaCheckBox"
                   Content="Negrita"
                   HorizontalAlignment="Left"
@@ -72,7 +71,8 @@
                    Height="43"
                    Background="Beige"
                    TextAlignment="Center"
-                   FontSize="18" />
+                   FontSize="18" 
+                   TextTrimming="WordEllipsis"/>
 
 
     </Grid>
